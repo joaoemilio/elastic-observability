@@ -5,11 +5,13 @@
 
 [petclinic-backend]
 
-> run:
+> Como iniciar o backend?
 
 ```mvnw spring-boot:run```
 
 [petclinic-frontend]
+
+> Como iniciar o front end
 
 ```npm install```
 
