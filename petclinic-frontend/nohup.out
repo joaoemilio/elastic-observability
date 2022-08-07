@@ -1,0 +1,84 @@
+Your global Angular CLI version (14.1.1) is greater than your local version (13.2.4). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+Warning: 'outputHashing' option is disabled when using the dev-server.
+****************************************************************************************
+This is a simple server for use in testing or debugging Angular applications locally.
+It hasn't been reviewed for security issues.
+
+DON'T USE IT FOR PRODUCTION!
+****************************************************************************************
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size | Estimated Transfer Size
+main.js               | main          |   1.28 MB |               249.84 kB
+styles.css, styles.js | styles        | 416.38 kB |                53.77 kB
+polyfills.js          | polyfills     | 151.24 kB |                39.14 kB
+scripts.js            | scripts       | 150.68 kB |                43.85 kB
+runtime.js            | runtime       |   1.36 kB |               713 bytes
+
+| Initial Total |   1.98 MB |               387.30 kB
+
+Build at: 2022-08-07T23:10:24.296Z - Hash: dcc9e8bcc3a14a6b - Time: 24005ms
+
+Warning: /home/ec2-user/elastic-apm-workshop/petclinic-frontend/src/app/pettypes/pettype.service.ts depends on 'rxjs/internal/operators'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: ▲ [WARNING] Expected identifier but found "\"spinner\""
+
+    styles.css:9254:11:
+      9254 │ @keyframes "spinner"{from{transform:rotate(0deg)}to{transform:ro...
+           ╵            ~~~~~~~~~
+
+
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+Your global Angular CLI version (14.1.1) is greater than your local version (13.2.4). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+Warning: 'outputHashing' option is disabled when using the dev-server.
+****************************************************************************************
+This is a simple server for use in testing or debugging Angular applications locally.
+It hasn't been reviewed for security issues.
+
+DON'T USE IT FOR PRODUCTION!
+****************************************************************************************
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size | Estimated Transfer Size
+main.js               | main          |   1.28 MB |               249.84 kB
+styles.css, styles.js | styles        | 416.38 kB |                53.77 kB
+polyfills.js          | polyfills     | 151.24 kB |                39.14 kB
+scripts.js            | scripts       | 150.68 kB |                43.85 kB
+runtime.js            | runtime       |   1.36 kB |               713 bytes
+
+| Initial Total |   1.98 MB |               387.30 kB
+
+Build at: 2022-08-07T23:18:29.377Z - Hash: dcc9e8bcc3a14a6b - Time: 22893ms
+
+Warning: /home/ec2-user/elastic-apm-workshop/petclinic-frontend/src/app/pettypes/pettype.service.ts depends on 'rxjs/internal/operators'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: ▲ [WARNING] Expected identifier but found "\"spinner\""
+
+    styles.css:9254:11:
+      9254 │ @keyframes "spinner"{from{transform:rotate(0deg)}to{transform:ro...
+           ╵            ~~~~~~~~~
+
+
+
+
+
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.

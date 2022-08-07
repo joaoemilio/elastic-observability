@@ -1,0 +1,313 @@
+which: no javac in (/home/ec2-user/.nvm/versions/node/v16.16.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin)
+Warning: JAVA_HOME environment variable is not set.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.springframework.samples:spring-petclinic:jar:1.5.16
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-tomcat:jar -> duplicate declaration of version (?) @ line 162, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building petclinic 1.5.16
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) > test-compile @ spring-petclinic >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spring-petclinic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-petclinic ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 89 source files to /home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes
+[WARNING] /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java: /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java uses or overrides a deprecated API.
+[WARNING] /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spring-petclinic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-petclinic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) < test-compile @ spring-petclinic <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) @ spring-petclinic ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.16.RELEASE)
+
+INFO  PetClinicApplication - Starting PetClinicApplication on ip-172-31-7-33.ec2.internal with PID 13872 (/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes started by ec2-user in /home/ec2-user/elastic-apm-workshop/petclinic-backend)
+DEBUG PetClinicApplication - Running with Spring Boot v1.5.16.RELEASE, Spring v4.3.19.RELEASE
+INFO  PetClinicApplication - The following profiles are active: hsqldb,spring-data-jpa
+INFO  AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e5ae0c: startup date [Sun Aug 07 23:09:41 UTC 2022]; root of context hierarchy
+INFO  Version - HV000001: Hibernate Validator 5.3.6.Final
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (file:/home/ec2-user/.m2/repository/org/springframework/spring-core/4.3.19.RELEASE/spring-core-4.3.19.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2dd74a5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  StandardService - Starting service [Tomcat]
+INFO  StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+INFO  [/api] - Initializing Spring embedded WebApplicationContext
+INFO  ContextLoader - Root WebApplicationContext: initialization completed in 4848 ms
+INFO  FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+INFO  DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+INFO  ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+INFO  ScriptUtils - Executing SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/initDB.sql]
+INFO  ScriptUtils - Executed SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/initDB.sql] in 47 ms.
+INFO  ScriptUtils - Executing SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/populateDB.sql]
+INFO  ScriptUtils - Executed SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/populateDB.sql] in 34 ms.
+INFO  LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  Version - HHH000412: Hibernate Core {5.0.12.Final}
+INFO  Environment - HHH000206: hibernate.properties not found
+INFO  Environment - HHH000021: Bytecode provider name : javassist
+INFO  Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+INFO  RequestMappingHandlerMapping - Mapped "{[/alerts/alert],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Alert>> org.springframework.samples.petclinic.rest.AlertRestController.getAlert()
+INFO  RequestMappingHandlerMapping - Mapped "{[/health],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.samples.petclinic.rest.HealthRestController.getHealth()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.getOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/lastname/{lastName}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Owner>> org.springframework.samples.petclinic.rest.OwnerRestController.getOwnersList(java.lang.String)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Owner>> org.springframework.samples.petclinic.rest.OwnerRestController.getOwners()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.addOwner(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.OwnerRestController.deleteOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.getPet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Pet>> org.springframework.samples.petclinic.rest.PetRestController.getPets()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/pettypes],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.PetType>> org.springframework.samples.petclinic.rest.PetRestController.getPetTypes()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.addPet(org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.PetRestController.deletePet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.PetType>> org.springframework.samples.petclinic.rest.PetTypeRestController.getAllPetTypes()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.getPetType(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.addPetType(org.springframework.samples.petclinic.model.PetType,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.updatePetType(int,org.springframework.samples.petclinic.model.PetType,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.PetTypeRestController.deletePetType(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/]}" onto public void org.springframework.samples.petclinic.rest.RootRestController.redirectToSwagger(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Specialty>> org.springframework.samples.petclinic.rest.SpecialtyRestController.getAllSpecialtys()
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.getSpecialty(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.addSpecialty(org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.SpecialtyRestController.deleteSpecialty(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.User> org.springframework.samples.petclinic.rest.UserRestController.addOwner(org.springframework.samples.petclinic.model.User,org.springframework.validation.BindingResult) throws java.lang.Exception
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Vet>> org.springframework.samples.petclinic.rest.VetRestController.getAllVets()
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.getVet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.addVet(org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.VetRestController.deleteVet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Visit>> org.springframework.samples.petclinic.rest.VisitRestController.getAllVisits()
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.getVisit(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.addVisit(org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.updateVisit(int,org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.VisitRestController.deleteVisit(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+INFO  RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e5ae0c: startup date [Sun Aug 07 23:09:41 UTC 2022]; root of context hierarchy
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionControllerAdvice
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  AuthenticationManagerConfiguration - 
+
+Using default security password: 22ca3d9a-aade-436a-b021-109a9128c9bb
+
+INFO  DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**'], Ant [pattern='/error']]], []
+INFO  DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46a4054c, org.springframework.security.web.context.SecurityContextPersistenceFilter@56ca683e, org.springframework.security.web.header.HeaderWriterFilter@99c96c0, org.springframework.security.web.authentication.logout.LogoutFilter@8ee1161, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46540589, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54eec74c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5da67799, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@147d6796, org.springframework.security.web.session.SessionManagementFilter@3946f5a9, org.springframework.security.web.access.ExceptionTranslationFilter@be044df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27aaae9c]
+INFO  AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+INFO  DefaultLifecycleProcessor - Starting beans in phase 2147483647
+INFO  DocumentationPluginsBootstrapper - Context refreshed
+INFO  DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+INFO  ApiListingReferenceScanner - Scanning for api listing references
+INFO  CachingOperationNameGenerator - Generating unique operation named: addOwnerUsingPOST_1
+INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+INFO  NioSelectorPool - Using a shared selector for servlet write/read
+INFO  TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+INFO  PetClinicApplication - Started PetClinicApplication in 14.74 seconds (JVM running for 26.406)
+INFO  [/api] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+INFO  DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+INFO  DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 63 ms
+INFO  AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79e5ae0c: startup date [Sun Aug 07 23:09:41 UTC 2022]; root of context hierarchy
+INFO  DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+INFO  AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:27 min
+[INFO] Finished at: 2022-08-07T23:13:59+00:00
+which: no javac in (/home/ec2-user/.nvm/versions/node/v16.16.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin)
+Warning: JAVA_HOME environment variable is not set.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.springframework.samples:spring-petclinic:jar:1.5.16
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-tomcat:jar -> duplicate declaration of version (?) @ line 162, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building petclinic 1.5.16
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) > test-compile @ spring-petclinic >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spring-petclinic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-petclinic ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 89 source files to /home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes
+[WARNING] /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java: /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java uses or overrides a deprecated API.
+[WARNING] /home/ec2-user/elastic-apm-workshop/petclinic-backend/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spring-petclinic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-petclinic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) < test-compile @ spring-petclinic <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.16.RELEASE:run (default-cli) @ spring-petclinic ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.16.RELEASE)
+
+INFO  PetClinicApplication - Starting PetClinicApplication on ip-172-31-7-33.ec2.internal with PID 5770 (/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes started by ec2-user in /home/ec2-user/elastic-apm-workshop/petclinic-backend)
+DEBUG PetClinicApplication - Running with Spring Boot v1.5.16.RELEASE, Spring v4.3.19.RELEASE
+INFO  PetClinicApplication - The following profiles are active: hsqldb,spring-data-jpa
+INFO  AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1005b36f: startup date [Sun Aug 07 23:20:49 UTC 2022]; root of context hierarchy
+INFO  Version - HV000001: Hibernate Validator 5.3.6.Final
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (file:/home/ec2-user/.m2/repository/org/springframework/spring-core/4.3.19.RELEASE/spring-core-4.3.19.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b6ec260] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  StandardService - Starting service [Tomcat]
+INFO  StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+INFO  [/api] - Initializing Spring embedded WebApplicationContext
+INFO  ContextLoader - Root WebApplicationContext: initialization completed in 4925 ms
+INFO  FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+INFO  FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+INFO  DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+INFO  ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+INFO  ScriptUtils - Executing SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/initDB.sql]
+INFO  ScriptUtils - Executed SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/initDB.sql] in 47 ms.
+INFO  ScriptUtils - Executing SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/populateDB.sql]
+INFO  ScriptUtils - Executed SQL script from URL [file:/home/ec2-user/elastic-apm-workshop/petclinic-backend/target/classes/db/hsqldb/populateDB.sql] in 30 ms.
+INFO  LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  Version - HHH000412: Hibernate Core {5.0.12.Final}
+INFO  Environment - HHH000206: hibernate.properties not found
+INFO  Environment - HHH000021: Bytecode provider name : javassist
+INFO  Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+INFO  RequestMappingHandlerMapping - Mapped "{[/alerts/alert],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Alert>> org.springframework.samples.petclinic.rest.AlertRestController.getAlert()
+INFO  RequestMappingHandlerMapping - Mapped "{[/health],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.samples.petclinic.rest.HealthRestController.getHealth()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.getOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/lastname/{lastName}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Owner>> org.springframework.samples.petclinic.rest.OwnerRestController.getOwnersList(java.lang.String)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Owner>> org.springframework.samples.petclinic.rest.OwnerRestController.getOwners()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.addOwner(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Owner> org.springframework.samples.petclinic.rest.OwnerRestController.updateOwner(int,org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.OwnerRestController.deleteOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.getPet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Pet>> org.springframework.samples.petclinic.rest.PetRestController.getPets()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/pettypes],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.PetType>> org.springframework.samples.petclinic.rest.PetRestController.getPetTypes()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.addPet(org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Pet> org.springframework.samples.petclinic.rest.PetRestController.updatePet(int,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pets/{petId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.PetRestController.deletePet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.PetType>> org.springframework.samples.petclinic.rest.PetTypeRestController.getAllPetTypes()
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.getPetType(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.addPetType(org.springframework.samples.petclinic.model.PetType,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.PetType> org.springframework.samples.petclinic.rest.PetTypeRestController.updatePetType(int,org.springframework.samples.petclinic.model.PetType,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/pettypes/{petTypeId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.PetTypeRestController.deletePetType(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/]}" onto public void org.springframework.samples.petclinic.rest.RootRestController.redirectToSwagger(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Specialty>> org.springframework.samples.petclinic.rest.SpecialtyRestController.getAllSpecialtys()
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.getSpecialty(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.addSpecialty(org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Specialty> org.springframework.samples.petclinic.rest.SpecialtyRestController.updateSpecialty(int,org.springframework.samples.petclinic.model.Specialty,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/specialties/{specialtyId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.SpecialtyRestController.deleteSpecialty(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.User> org.springframework.samples.petclinic.rest.UserRestController.addOwner(org.springframework.samples.petclinic.model.User,org.springframework.validation.BindingResult) throws java.lang.Exception
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Vet>> org.springframework.samples.petclinic.rest.VetRestController.getAllVets()
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.getVet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.addVet(org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Vet> org.springframework.samples.petclinic.rest.VetRestController.updateVet(int,org.springframework.samples.petclinic.model.Vet,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets/{vetId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.VetRestController.deleteVet(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.springframework.samples.petclinic.model.Visit>> org.springframework.samples.petclinic.rest.VisitRestController.getAllVisits()
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.getVisit(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.addVisit(org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult,org.springframework.web.util.UriComponentsBuilder)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.model.Visit> org.springframework.samples.petclinic.rest.VisitRestController.updateVisit(int,org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/visits/{visitId}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.springframework.samples.petclinic.rest.VisitRestController.deleteVisit(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+INFO  RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+INFO  RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+INFO  RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1005b36f: startup date [Sun Aug 07 23:20:49 UTC 2022]; root of context hierarchy
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionControllerAdvice
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+INFO  AuthenticationManagerConfiguration - 
+
+Using default security password: 8e0eb952-9a65-4051-8704-7da0839b81c0
+
+INFO  DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**'], Ant [pattern='/error']]], []
+INFO  DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@369ed1b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c46801b, org.springframework.security.web.header.HeaderWriterFilter@3c899eb, org.springframework.security.web.authentication.logout.LogoutFilter@6aaa90fb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61c6b571, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f871eec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@651a9108, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a57b695, org.springframework.security.web.session.SessionManagementFilter@56dd33ba, org.springframework.security.web.access.ExceptionTranslationFilter@5e37bf9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@114c444d]
+INFO  AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+INFO  DefaultLifecycleProcessor - Starting beans in phase 2147483647
+INFO  DocumentationPluginsBootstrapper - Context refreshed
+INFO  DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+INFO  ApiListingReferenceScanner - Scanning for api listing references
+INFO  CachingOperationNameGenerator - Generating unique operation named: addOwnerUsingPOST_1
+INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+INFO  NioSelectorPool - Using a shared selector for servlet write/read
+INFO  TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+INFO  PetClinicApplication - Started PetClinicApplication in 15.371 seconds (JVM running for 27.92)
+INFO  [/api] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+INFO  DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+INFO  DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
