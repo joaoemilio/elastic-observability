@@ -13,7 +13,7 @@
 
 ```npm install```
 
-```ng server```
+```ng serve --host 0.0.0.0 --disable-host-check --configuration production```
 
 [test]
 
