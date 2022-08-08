@@ -1,11 +1,5 @@
-[setup-your-environment]
+### JAVA-AGENT
 
-[hosts]
-# Prevent CORS issues
-Add 127.0.0.1 petclinic.com to your hosts file
-This is to workaround angular deployment that calls APIs. Once we move it to GCP it is just a matter of updating the alias to point to the Public IP address
-
-[JAVA-AGENT]
 > Faça o Download do agent apm para Java mais atual
 https://search.maven.org/search?q=g:co.elastic.apm%20AND%20a:elastic-apm-agent
 
@@ -34,11 +28,12 @@ exec "$JAVACMD" \
   ${WRAPPER_LAUNCHER} $MAVEN_CMD_LINE_ARGS
 
 ## ANGULAR (RUM)
-There are two things to be done:
-1 - Install the Angular RUM module
+Para configurar o RUM em uma aplicação Angular são necessários dois passos:
+
+1. Instalar o module RUM
 > npm install @elastic/apm-rum-angular --save
 
-2 - Update the code app.module.ts
+2. Atualizar o código do app.module.ts (ou o código onde está a inicialização, por exemplo no AppComponent)
 
 Follow this documentation:
 > https://www.elastic.co/guide/en/apm/agent/rum-js/current/angular-integration.html
