@@ -14,7 +14,8 @@ https://www.elastic.co/guide/en/apm/agent/java/current/setup-javaagent.html#setu
 . Siga as instruções da Linguagem de programação desejada
 
 > Atualize o script mvnw com as instruções do agent
-
+	
+~~~~
 exec "$JAVACMD" \
   -javaagent:/home/ec2-user/elastic-apm-workshop/petclinic-backend/elastic-apm-agent-1.33.0.jar \
   -Delastic.apm.service_name=petclinic-backend \
@@ -26,6 +27,7 @@ exec "$JAVACMD" \
   -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \
   "-Dmaven.home=${M2_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
   ${WRAPPER_LAUNCHER} $MAVEN_CMD_LINE_ARGS
+~~~~
 
 ## ANGULAR (RUM)
 Para configurar o RUM em uma aplicação Angular são necessários dois passos:
