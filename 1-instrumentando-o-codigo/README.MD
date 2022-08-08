@@ -33,10 +33,12 @@ exec "$JAVACMD" \
   "-Dmaven.home=${M2_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
   ${WRAPPER_LAUNCHER} $MAVEN_CMD_LINE_ARGS
 
-[ANGULAR-RUM]
+##ANGULAR (RUM)
 There are two things to be done:
 1 - Install the Angular RUM module
+> npm install @elastic/apm-rum-angular --save
+
 2 - Update the code app.module.ts
 
 Follow this documentation:
-https://www.elastic.co/guide/en/apm/agent/rum-js/current/angular-integration.html
+> https://www.elastic.co/guide/en/apm/agent/rum-js/current/angular-integration.html

@@ -35,6 +35,7 @@ import {PartsModule} from './parts/parts.module';
 import {SpecialtiesModule} from './specialties/specialties.module';
 import {HttpErrorHandler} from './error.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ApmModule, ApmService } from '@elastic/apm-rum-angular';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppComponent,
   ],
   imports: [
+    ApmModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
@@ -53,13 +55,21 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SpecialtiesModule,
     PartsModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
+    ApmService,
     HttpErrorHandler
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-
+  constructor(service: ApmService) {
+    // Agent API is exposed through this apm instance
+    const apm = service.init({
+      serviceName: 'petclinic-frontend',
+      serverUrl: 'https://e93c878a5ff845e0bee2d3096b0d9ab5.apm.us-east-1.aws.cloud.es.io:443',
+      environment: 'production'
+    })
+  }
 }
