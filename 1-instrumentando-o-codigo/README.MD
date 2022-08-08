@@ -15,9 +15,9 @@ https://search.maven.org/search?q=g:co.elastic.apm%20AND%20a:elastic-apm-agent
 https://www.elastic.co/guide/en/apm/agent/java/current/setup-javaagent.html#setup-generic
 
 > Diretamente no Kibana:
-### Clique em Integrations
-### Elastic APM
-### Siga as instruções da Linguagem de programação desejada
+. Clique em Integrations
+. Elastic APM
+. Siga as instruções da Linguagem de programação desejada
 
 > Atualize o script mvnw com as instruções do agent
 
@@ -33,7 +33,7 @@ exec "$JAVACMD" \
   "-Dmaven.home=${M2_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
   ${WRAPPER_LAUNCHER} $MAVEN_CMD_LINE_ARGS
 
-##ANGULAR (RUM)
+## ANGULAR (RUM)
 There are two things to be done:
 1 - Install the Angular RUM module
 > npm install @elastic/apm-rum-angular --save
